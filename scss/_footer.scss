@@ -1,0 +1,12 @@
+.footer {
+  background: $color-dark; color: #fff; padding: 3rem 0;
+
+  &__container { @include container; }
+  &__content { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  @include mq($bp-md) { &__content { grid-template-columns: repeat(3,1fr); } }
+
+  &__column h3 { color: $color-primary; margin-bottom: .75rem; }
+  &__column a { color: #ddd; display: block; margin: .25rem 0; &:hover { color: $color-primary; } }
+
+  &__bottom { border-top: 1px solid rgba(255,255,255,.12); text-align: center; padding-top: 1rem; font-size: .9rem; }
+}
